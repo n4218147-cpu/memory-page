@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>برای تو 🤍</title>
+    <title>برای یک آدم دوست‌داشتنی 🤍</title>
 
     <style>
         * {
@@ -16,82 +16,151 @@
 
         body {
             min-height: 100vh;
+            padding: 25px 16px;
             font-family: Tahoma, Arial, sans-serif;
-            background: #f4f0eb;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 25px;
+            background:
+                radial-gradient(circle at top right, #e8cfc2 0%, transparent 28%),
+                radial-gradient(circle at bottom left, #cbd7c7 0%, transparent 30%),
+                #f5eee5;
+            color: #3e443c;
         }
 
         .page {
             width: 100%;
-            max-width: 500px;
-            background: #fffdfb;
-            border-radius: 28px;
-            padding: 45px 25px;
+            max-width: 520px;
+            margin: 0 auto;
+            background: rgba(255, 252, 246, 0.94);
+            border: 1px solid rgba(115, 128, 105, 0.25);
+            border-radius: 30px;
+            padding: 42px 25px 35px;
             text-align: center;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 18px 45px rgba(75, 69, 58, 0.12);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* تزئینات گوشه */
+
+        .corner {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            opacity: 0.35;
+        }
+
+        .corner.one {
+            top: -45px;
+            right: -35px;
+            background: #9caf96;
+        }
+
+        .corner.two {
+            bottom: -50px;
+            left: -35px;
+            background: #d79d86;
         }
 
         .heart {
-            font-size: 38px;
-            margin-bottom: 18px;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .small-title {
+            font-size: 13px;
+            color: #9b7566;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
         }
 
         h1 {
             font-size: 27px;
             font-weight: 500;
+            color: #596853;
+            line-height: 1.8;
             margin-bottom: 25px;
-            color: #333;
         }
 
         .intro {
             font-size: 16px;
-            line-height: 2.2;
-            color: #666;
-            margin-bottom: 35px;
+            line-height: 2.35;
+            color: #62645d;
+            margin-bottom: 30px;
         }
 
         .divider {
-            width: 55px;
-            height: 2px;
-            background: #c9b9a8;
-            margin: 0 auto 35px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 5px auto 32px;
+            width: 80%;
+        }
+
+        .divider span {
+            height: 1px;
+            background: #c9b8a4;
+            flex: 1;
+        }
+
+        .divider b {
+            color: #b57e68;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .message-box {
+            background: #eef1e9;
+            border-radius: 22px;
+            padding: 25px 20px;
+            border-right: 4px solid #8ea087;
+            margin-bottom: 32px;
         }
 
         .message {
-            font-size: 17px;
-            line-height: 2.3;
-            color: #444;
-            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 2.45;
+            color: #4f574b;
+        }
+
+        .video-title {
+            font-size: 15px;
+            color: #8b695c;
+            margin-bottom: 13px;
         }
 
         .video-box {
             width: 100%;
             aspect-ratio: 16 / 9;
-            background: #e9e3dc;
-            border-radius: 20px;
+            background: linear-gradient(135deg, #dce3d8, #ead8ce);
+            border-radius: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #8a7b6d;
+            color: #687363;
             font-size: 15px;
+            border: 1px solid rgba(100, 110, 90, 0.2);
             margin-bottom: 30px;
         }
 
         .footer {
             font-size: 14px;
-            color: #999;
-            line-height: 2;
+            line-height: 2.2;
+            color: #77786f;
         }
 
         .signature {
-            margin-top: 20px;
+            margin-top: 18px;
             font-size: 15px;
-            color: #777;
+            color: #a36f5c;
         }
+
+        .bottom-mark {
+            margin-top: 25px;
+            font-size: 18px;
+            letter-spacing: 7px;
+            color: #9aaa91;
+        }
+
     </style>
 </head>
 
@@ -99,9 +168,19 @@
 
     <main class="page">
 
+        <div class="corner one"></div>
+        <div class="corner two"></div>
+
         <div class="heart">🤍</div>
 
-        <h1>برای یک آدم دوست‌داشتنی</h1>
+        <div class="small-title">
+            یک یادگاری کوچک
+        </div>
+
+        <h1>
+            برای یک آدم<br>
+            دوست‌داشتنی
+        </h1>
 
         <p class="intro">
             بعضی آدم‌ها فقط برای بخشی از مسیر زندگی‌مون میان،
@@ -109,29 +188,45 @@
             که دیگه نمی‌شه اون روزها رو بدون حضورشون تصور کرد.
         </p>
 
-        <div class="divider"></div>
+        <div class="divider">
+            <span></span>
+            <b>✦</b>
+            <span></span>
+        </div>
 
-        <p class="message">
-            شاید همه‌چیز از کلاس و درس شروع شد،
-            اما چیزی که از اون روزها برای ما موند،
-            فقط خاطرات یک کلاس نبود...
-            <br><br>
-            بعضی آدم‌ها از «معلم» بودن،
-            تبدیل می‌شن به «رفیق».
-        </p>
+        <div class="message-box">
+
+            <p class="message">
+                شاید همه‌چیز از کلاس و درس شروع شد،
+                اما چیزی که از اون روزها برای ما موند،
+                فقط خاطرات یک کلاس نبود...
+                <br><br>
+                بعضی آدم‌ها از «معلم» بودن،
+                تبدیل می‌شن به «رفیق».
+            </p>
+
+        </div>
+
+        <div class="video-title">
+            🎬 چند لحظه از خاطرات ما
+        </div>
 
         <div class="video-box">
-            ویدیوی خاطرات ما اینجا قرار می‌گیرد 🎬
+            ویدیوی خاطرات ما اینجا قرار می‌گیرد
         </div>
 
         <p class="footer">
-            این چند لحظه را ساختیم تا بخشی از خاطرات قشنگمان را
-            دوباره با هم مرور کنیم.
+            این چند لحظه رو ساختیم تا بخشی از
+            خاطرات قشنگمون رو دوباره با هم مرور کنیم.
         </p>
 
         <p class="signature">
             با عشق، از طرف ما سه نفر 🤍
         </p>
+
+        <div class="bottom-mark">
+            · · ·
+        </div>
 
     </main>
 
